@@ -85,11 +85,13 @@ body {
 }
 
 .poem {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
     line-height: 2;
     color: var(--text-color);
     animation: fadeIn 2s ease-in;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Lyrics Styles */
@@ -198,6 +200,69 @@ body {
     }
 }
 
+/* Video Button Styles */
+.video-button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.play-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.play-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+    background-color: #ff5252;
+}
+
+/* Letter Styles */
+.letter {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.letter h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.letter-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.letter-content p {
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Add animation delay to letter paragraphs */
+.letter-content p:nth-child(1) { animation-delay: 0.2s; }
+.letter-content p:nth-child(2) { animation-delay: 0.4s; }
+.letter-content p:nth-child(3) { animation-delay: 0.6s; }
+.letter-content p:nth-child(4) { animation-delay: 0.8s; }
+.letter-content p:nth-child(5) { animation-delay: 1s; }
+
 /* Mobile Optimization */
 @media (max-width: 428px) {
     .header h1 {
@@ -205,7 +270,7 @@ body {
     }
 
     .poem {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .lyrics-content {
@@ -215,6 +280,15 @@ body {
     .memory-image {
         max-width: 300px;
         height: 300px;
+    }
+
+    .play-button {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
+
+    .letter-content {
+        font-size: 1.1rem;
     }
 }
 
