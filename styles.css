@@ -177,10 +177,18 @@ body {
 }
 
 .signature p {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
     animation: fadeIn 2s ease-in;
+}
+
+.signature .date {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: 10px;
+    font-style: italic;
 }
 
 /* Animations */
